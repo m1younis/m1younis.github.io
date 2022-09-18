@@ -40,6 +40,7 @@
         }
 
         #socials {
+            color: #a1a1a1;
             display: none;
         }
 
@@ -47,16 +48,24 @@
             font-size: 80px;
         }
 
-        .profile {
-            color: #a1a1a1;
-            font-size: 40px;
-            padding-left: .63em;
-            padding-right: .63em;
+        a {
+            color: inherit;
+            text-decoration: none;
             transition: color .55s;
         }
 
-        .profile:hover,
-        .profile:focus {
+        .profile {
+            font-size: 40px;
+            padding-left: .6em;
+            padding-right: .6em;
+        }
+
+        .profile a {
+            transition: color .55s;
+        }
+
+        .profile a:hover,
+        .profile a:focus {
             color: #000000;
             cursor: pointer;
         }
@@ -68,12 +77,17 @@
         <h1>Moeen Younis</h1>
         <!-- Social profile links embedded within corresponding icons -->
         <div id="socials">
-            <a class="profile" href="mailto:moeenyounis11@gmail.com">
-                <i class="fa-solid fa-at"></i></a>
-            <a class="profile" href="https://www.linkedin.com/in/moeen-younis" target="_blank">
-                <i class="fa-brands fa-linkedin"></i></a>
-            <a class="profile" href="https://github.com/m1younis" target="_blank">
-                <i class="fa-brands fa-github"></i></a>
+            <span class="profile" id="email">
+                <a href="mailto:moeenyounis11@gmail.com"><i class="fa-solid fa-at"></i></a>
+            </span>
+            <span class="profile" id="linkedin">
+                <a href="https://www.linkedin.com/in/moeen-younis" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i></a>
+            </span>
+            <span class="profile" id="github">
+                <a href="https://github.com/m1younis" target="_blank">
+                    <i class="fa-brands fa-github"></i></a>
+            </span>
         </div>
     </div>
 
