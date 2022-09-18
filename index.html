@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Moeen Younis</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="assets/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+
+    <style type="text/css">
+        html,
+        body {
+            font-family: "Rubik", sans-serif;
+            height: 100%;
+            overflow: hidden;
+            position: fixed;
+            width: 100%;
+        }
+
+        #main {
+            bottom: 0;
+            display: none;
+            left: 0;
+            margin: auto;
+            padding: 0 40px;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            text-align: center;
+            transform: translateY(-55%);
+        }
+
+        #socials {
+            display: none;
+        }
+
+        h1 {
+            font-size: 80px;
+        }
+
+        .socials-a {
+            color: #a1a1a1;
+            font-size: 40px;
+            padding-left: .63em;
+            padding-right: .63em;
+            transition: color .55s;
+        }
+
+        .socials-a:hover,
+        .socials-a:focus {
+            color: #000000;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <h1>Moeen Younis</h1>
+        <div id="socials">
+            <a class="socials-a" href="mailto:moeenyounis11@gmail.com">
+                <i class="fa-solid fa-at"></i></a>
+            <a class="socials-a" href="https://www.linkedin.com/in/moeen-younis" target="_blank">
+                <i class="fa-brands fa-linkedin"></i></a>
+            <a class="socials-a" href="https://github.com/m1younis" target="_blank">
+                <i class="fa-brands fa-github"></i></a>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $("#main").fadeTo(1000, 1);
+        $("#socials").delay(1200).fadeTo(1000, 1);
+    </script>
+</body>
+
+</html>
