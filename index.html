@@ -42,6 +42,10 @@
             transform: translateY(-60%);
         }
 
+        #particles {
+            height: 100%;
+        }
+
         #profiles {
             color: #8f8f8f;
             display: none;
@@ -77,6 +81,7 @@
 </head>
 
 <body>
+    <div id="particles"></div>      <!-- Defined for the particle background -->
     <div id="main">
         <h1>Moeen Younis</h1>
         <!-- Social profile links embedded within corresponding icons -->
@@ -99,6 +104,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script type="text/javascript">
+        particlesJS.load("particles", "assets/content/particles.json", () => {});
         $("#main").fadeTo(1000, 1);
         $("#profiles").delay(1200).fadeTo(1000, 1);
     </script>
