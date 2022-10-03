@@ -42,30 +42,10 @@
         </div>
     </div>
 
-    <!-- JS libraries linked (jQuery and particles.js) -->
+    <!-- JS libraries (jQuery and particles.js) and source linked -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script type="text/javascript">
-        // Site elements loaded alongside particles.js configuration
-        particlesJS.load("particles", "assets/content/particles.json", () => {});
-        $("#main").fadeTo(1000, 1);
-        $("#subs").delay(1500).fadeTo(1000, 1);
-        $("#profiles").delay(1500).fadeTo(1000, 1);
-
-        // Profile info text defined and updated every 3 seconds
-        let i = 0, subs = [
-            "Aspiring Developer",
-            "Computer Science Graduate",
-            "Programming Enthusiast"
-        ];
-
-        setInterval(() => {
-            $("#subs").fadeTo(500, 0).fadeTo(500, 1);
-            setTimeout(() =>
-                $("#subs").text(subs[i % subs.length]), 500);
-            ++i;
-        }, 3000);
-    </script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
