@@ -13,7 +13,7 @@
         "shape": {
             "type": "circle",
             "stroke": {
-                "width": 1.2,
+                "width": 1.5,
                 "color": "#c0c0c0"
             },
             "polygon": {
@@ -36,7 +36,7 @@
             }
         },
         "size": {
-            "value": 5,
+            "value": 6.5,
             "random": true,
             "anim": {
                 "enable": false,
@@ -54,7 +54,7 @@
         },
         "move": {
             "enable": true,
-            "speed": 8,
+            "speed": 6,
             "direction": "none",
             "random": false,
             "straight": false,
