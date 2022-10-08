@@ -5,12 +5,12 @@ $("#main").fadeTo(1000, 1);
 $("#subs").delay(1500).fadeTo(1000, 1);
 $("#profiles").delay(1500).fadeTo(1000, 1);
 
-// Site content file loaded
-// Profile info text defined and updated every 3 secs
+// Site content loaded asynchronously, profile info
+// text referenced and updated every 3 secs
 var i = 0, subs = [];
 
 $.getJSON("assets/content/main.json", (data) => {
-    subs = data.subs
+    subs = data.subs;
 });
 
 setInterval(() => {
