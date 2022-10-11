@@ -66,8 +66,7 @@ a {
     transition: color .55s;
 }
 
-.profile a:hover,
-.profile a:focus {
+.profile a:hover {
     color: #000000;
     cursor: pointer;
 }
