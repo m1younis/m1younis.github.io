@@ -51,6 +51,7 @@ h2 {
 
 a {
     color: inherit;
+    display: inline-block;
     text-decoration: none;
     transition: color .55s;
 }
@@ -63,6 +64,7 @@ a {
 }
 
 .profile a {
+    height: 50px;
     transition: color .55s;
 }
 
